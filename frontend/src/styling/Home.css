@@ -1,0 +1,193 @@
+
+.opening {
+    /*box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);*/
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.15);
+    display: grid;
+    font-family: 'Trebuchet MS', sans-serif;
+    height: 40%;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .back {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    
+    .yellow {
+      background-color: #f1ef1c;
+      /*background-color: #D8BFD8;*/
+      /*background-color: #fa001a;*/
+      
+      grid-column: 1 / span 9;
+      grid-row: 1 / span 3;
+    }
+    
+    .topdots {
+      
+      background:
+      radial-gradient(#4cc9c8 20%, transparent 19%),
+      radial-gradient(#4cc9c8 20%, transparent 19%),
+      transparent;
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+      grid-column: 8 / span 6;
+      grid-row: 2 / span 3;
+    }
+    
+    .personal-info {
+      grid-column: 2 / span 6;
+      grid-row: 5 / span 6;
+      p {
+        font-size: 10px;
+        &:first-of-type {
+          font-size: 18px;
+          font-weight: bold;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        &:nth-of-type(2){
+          font-size: 12px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+    
+    .bottomdots {
+      background:
+      radial-gradient(#4cc9c8 20%, transparent 19%),
+      radial-gradient(#4cc9c8 20%, transparent 19%),
+      transparent;
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+      grid-column: 1 / span 8;
+      grid-row: 11 / span 2;
+      z-index: 2;
+    }
+    
+    .pink {
+      /*background-color: #fa001a;*/
+      /*background-color:  #f1ef1c;*/
+      background-color: plum;
+      grid-column: 8 / span 5;
+      grid-row: 10 / span 3;
+    }
+  }
+
+  p{
+    margin-bottom: 40px;
+    /*font-weight: bold;*/
+    font-style: oblique;
+  }
+
+  .descrp{
+    font-weight: lighter;
+    margin-top: 30px;
+  }
+
+  h2{
+    margin-bottom: 10px;
+    margin-top: 100px;
+    font-size: 1.8rem;
+  }
+
+  .practice_btn{
+    margin-bottom: 30px;
+    background-color: var(--primary);
+    color: aliceblue;
+  }
+
+
+
+  
+
+
+
+  
+/*----------------------------------------------------------------FAQ------------------------------------------*/
+
+  .faqwarpper{
+    margin-top: 100px;
+    display: flex;
+    height:  100hv;
+    width: 100wv;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home .faqt{
+    margin-top: 100px;
+    text-align: center;
+
+  }
+
+  .accordion{
+    width: 70%;
+  }
+
+  .faqitem{
+    width: 100%;
+    background: #f0ebe1;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+
+    
+    background-color:#FFFFFF;
+    color:black;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.05);
+    
+    border-bottom:black 4px solid;
+    border-right:black 2px solid;
+    border-top: black 0.01rem solid;
+    border-left: black 0.01rem solid;
+  }
+
+  .faqtitle{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .faq{
+    color: #8b7f75;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.1s cubic-bezier(0,1,0,1);
+  }
+
+  .faq.show{
+    margin-top: 20px;
+    height: auto;
+    max-height: 9999px;
+    transition:  all 0.1s cubic-bezier(1,0,1,0);
+  }
+
+
+
+/*----------------------------------------------------------------Footer------------------------------------------*/
+  .footer{
+    text-align: center;
+    margin-top: 100px;
+    border-top: #444cf7 1px solid ;
+
+
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+  }
+
+  .footer div{
+    display:inline-block;
+    margin: 40px;
+  }
+  
+
+  .about_us p{
+    margin-top: 5px;
+  }
+
+  .contact span{
+    padding-top: 20px;
+  }
