@@ -34,7 +34,7 @@ export const useAddCard = () => {
         }
 
         try {
-            const res = await axios.post('http://localhost:8000/cards/addCard',
+            const res = await axios.post('/cards/addCard',
                                         { question, answer, explanation, allSubjects },
                                         { headers: {
                                                 'Content-Type': 'application/json',

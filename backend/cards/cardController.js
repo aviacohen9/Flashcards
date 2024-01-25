@@ -11,6 +11,7 @@ module.exports.getAllCards = async (req, res) => {
     const user_id = req.user._id
     try {
         const cards = await Card.find({ user_id }).sort({createdAt: -1})
+                            //Card.find({ user_id }).sort({createdAt: -1}).limit(5)
         res.status(200).json(cards)
     } catch (error) {
         res.status(400).json({error: error.message})

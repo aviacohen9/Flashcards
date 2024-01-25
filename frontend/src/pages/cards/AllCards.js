@@ -10,6 +10,9 @@ import { useCardsContext } from "../../hooks/cards/useCardsContext";
 import CardList from "../../components/cards/CardList";
 import Alert from '../../components/Alert';
 
+//style
+import '../../styling/Cards.css'
+
 /**
  * @returns a page that display all user's cards with a filter option
  */
@@ -138,7 +141,7 @@ const AllCards = () => {
     return ( 
         <div>
                 {   isLoading && cardsToDisplay.length===0?
-                        (<h1>Loading...</h1>)
+                        (<h1 className="loading">Loading...</h1>)
                         :(<CardList cards={cardsToDisplay}
                                     filterBySubject={filterBySubject}
                                     subjects={subjects}
@@ -147,7 +150,8 @@ const AllCards = () => {
                 }
                 {   !isLoading 
                     && cardsToDisplay.length===0 
-                    && <h4>You have'nt created any card yet. Youc can create a new one <Link to={"/cards/addcard"}>here</Link></h4>
+                    && <h4>You have'nt created any card yet. Youc can create a new one
+                        <Link style={{textDecoration: 'none'}} to={"/cards/addcard"}> here.</Link></h4>
                 }
             { alert && <Alert variant={variant} />}
         </div>

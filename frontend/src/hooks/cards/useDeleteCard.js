@@ -30,7 +30,7 @@ export const useDeleteCard = () => {
         }
 
         try {
-            const res = await axios.delete('http://localhost:8000/cards/'+card_id, { 
+            const res = await axios.delete('/cards/'+card_id, { 
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`

@@ -7,7 +7,7 @@ import '../styling/Home.css';
 import Footer from '../components/homepage/Footer';
 import Faq from '../components/homepage/Faq'
 
-const Home = () => {
+const LandingPage = () => {
 
     const data = [ {q:'Question1', a:'Answer1'}, {q:'Question2', a:'Answer2'}, {q:'Question3', a:'Answer3'}]
     
@@ -63,4 +63,4 @@ const Home = () => {
      );
 }
  
-export default Home;
+export default LandingPage;

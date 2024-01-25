@@ -9,10 +9,10 @@ import RootLayout from './layouts/RootLayout'
 import CardsLayout  from './layouts/CardsLayout'
 
 //pages
-import Home from './pages/Home';
+import LandingPage from './pages/LandingPage';
 import AboutUs from './pages/AboutUs';
 import TermsOfUse from './pages/TermsOfUse';
-import Dashboard from './pages/Dashboard'
+import Homepage from './pages/Homepage'
 import Signup from './pages/auth/Signup';
 import Login from './pages/auth/Login';
 import AllCards from './pages/cards/AllCards';
@@ -27,7 +27,7 @@ const routesConfig= createRoutesFromElements(
 
         <Route path='/' element={<RootLayout/>} >
   
-                <Route index element={<Home/>} loader={authLoader}/>
+                <Route index element={<LandingPage/>} loader={authLoader}/>
   
                 <Route exact path="signup" loader={authLoader} element={<Signup/>} />
                      
@@ -37,7 +37,7 @@ const routesConfig= createRoutesFromElements(
 
                 <Route exact path="aboutUs" element={  <AboutUs/>} />
 
-                <Route exact path='dashboard' element={ <Dashboard/>} />
+                <Route exact path='homepage' element={ <Homepage/>} />
   
                 <Route exact path="cards" element={<CardsLayout/>} errorElement={<CardsError/>}   >
   

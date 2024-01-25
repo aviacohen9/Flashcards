@@ -11,6 +11,6 @@ import {  read_cookie } from 'sfcookies';
 export const authLoader =  () => {
     const cookie_key = 'flash_user';
     if(read_cookie(cookie_key).length!==0)
-        return redirect("/dashboard");
+        return redirect("/homepage");
     return null;
 }

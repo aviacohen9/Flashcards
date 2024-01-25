@@ -36,7 +36,7 @@ export const useEditCard = () => {
         }
         try {
             const res = await axios.patch(
-                'http://localhost:8000/cards/editcard/'+card_id,
+                '/cards/editcard/'+card_id,
                 { question, answer, explanation, allSubjects },
                 { 
                     headers: {

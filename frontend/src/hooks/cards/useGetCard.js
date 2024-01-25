@@ -31,7 +31,7 @@ export const useGetCard = () => {
         }
 
         try {
-            const res = await axios('http://localhost:8000/cards/'+card_id, { 
+            const res = await axios('/cards/'+card_id, { 
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${user.token}`

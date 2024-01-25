@@ -56,7 +56,7 @@ const Signup = () => {
         
         //fetching data
         try{
-                const res = await axios.post('http://localhost:8000/signup',
+                const res = await axios.post('/signup',
                                         { firstName, lastName, email, password },
                                         {headers: {
                                                 'Content-Type': 'application/json'}
@@ -71,7 +71,7 @@ const Signup = () => {
                 dispatch({type: 'LOGIN', payload: data})
 
                 //redirect
-                navigate('/dashboard');
+                navigate('/homepage');
                 
         }catch(err){
                 if(err.response.data.errors)
