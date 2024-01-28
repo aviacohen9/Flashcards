@@ -13,9 +13,7 @@ const app = express();
 
 // middleware
 app.use(express.json());       
-
-app.use(cors({withCredentials: true, Origin: true,})); 
-
+app.use(cors({origin:['http://localhost:3000','https://flash-cards.onrender.com'],}));
 app.use(cookieParser());
 
 app.use((req, res, next)=>{     
